@@ -35,7 +35,7 @@ footer {
     .footer-newsletter-header {
         display: flex;
         align-items: center;
-        padding: 51px 0 33px 0;
+        padding: 51px 15px 33px 15px;
     }
 
     h3 {
@@ -74,6 +74,7 @@ footer {
 .footer-newsletter::after {
     content: "";
     background: url("../img/footer/newsletter-image.png") no-repeat center 20%;
+    background-size: cover;
     opacity: 0.2;
     top: 0;
     left: 0;
@@ -123,11 +124,24 @@ footer {
         }
     }
 
-    .horizontal-line {
-        height: 1px;
-        background-color: #95989D;
-        margin-top: 20px;
-        margin-bottom: 32px; 
+    .horizontal-line__wrapper {
+        padding: 0 15px;
+        
+        .horizontal-line {
+            height: 1px;
+            background-color: #95989D;
+            margin: 20px auto 32px auto;
+        }
+    }
+
+    .footer-nav {
+       li:first-child {
+            margin-left: -8px;
+        }
+        
+       li:last-child {
+            margin-right: -8px;
+        }
     }
 }
 

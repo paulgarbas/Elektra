@@ -11,7 +11,13 @@ header {
         text-align: center;
         align-self: center;
         
-        input[type="text"] {
+        input {
+            background: url("../img/header/icons/search.svg") no-repeat;
+            background-position-x: 95.5%;
+            background-position-y: center;
+            background-size: 19.21px;
+            padding-left: 12px;
+            padding-right: 38px;
             color: #2B303A; 
             border: none;
             border-bottom: 1px solid #BAC1B8;
@@ -19,9 +25,15 @@ header {
             width: 100%;
             font-size: 20px;
         }
+
+        input:focus {
+            border: none;
+            border-bottom: 1px solid #BAC1B8;
+        }
         
-        input[placeholder] {
+        ::placeholder {
             color: #2B303A;
+            opacity: 1;
         }
     }
 
@@ -48,9 +60,9 @@ header {
     }
     
     .horizontal-line {
-        border-top: 1px solid rgba(43, 48, 58, 0.2);
-        opacity: 20%;
-        margin: 9px 0 13px 0;
+        height: 1px;
+        background-color: rgba(43, 48, 58, 0.2);
+        margin: 28px 0 10px 0;
     }
 
     nav {
@@ -60,6 +72,14 @@ header {
             list-style: none;
             display: flex;
             justify-content: space-between;
+
+            li:first-child {
+                margin-left: -8px;
+            }
+            
+            li:last-child {
+                margin-right: -8px;
+            }
 
             a {
                 display: block;
@@ -78,6 +98,12 @@ header {
             a:hover {
                 font-weight: 700;
             }
+        }
+
+        .nav-mobile {
+            display: none;
+            outline: none;
+            text-align: center;
         }
     }
 }
@@ -98,6 +124,18 @@ header {
 
         .social-icons-column {
             text-align: center;
+        }
+    }
+}
+
+@media (max-width: 979px) {
+    header {
+        nav .nav-desktop {
+            display: none;
+        }
+    
+        nav .nav-mobile {
+            display: block;
         }
     }
 }

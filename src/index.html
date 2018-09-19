@@ -57,7 +57,7 @@
 				<div class="row-m">
 					<div class="col-12-m">
 						<nav>
-							<ul>
+							<ul class="nav-desktop">
 								<li>
 									<a href="#">Home</a>
 								</li>
@@ -83,6 +83,14 @@
 									<a href="#" class="work-with-us">Work with us</a>
 								</li>
 							</ul>
+
+							<div class="nav-mobile">
+								<button class="hamburger hamburger--elastic" type="button">
+									<span class="hamburger-box">
+										<span class="hamburger-inner"></span>
+									</span>
+								</button>
+							</div>
 						</nav>
 					</div>
 				</div>
@@ -160,9 +168,11 @@
 						</div>
 					</div>
 
-					<div class="row-m horizontal-line"></div>
+					<div class="row-m horizontal-line__wrapper">
+						<div class="col-12-m horizontal-line"></div>
+					</div>
 
-					<div class="row-m">
+					<div class="row-m footer-nav">
 						<div class="col-12-m">
 							<nav>
 								<ul>
@@ -191,5 +201,7 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="js/hamburger.js"></script>
 	</body>
 </html>
