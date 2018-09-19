@@ -1,0 +1,103 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+    margin-top: 30px;
+    margin-bottom: 17px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+    .search-column {
+        text-align: center;
+        align-self: center;
+        
+        input[type="text"] {
+            color: #2B303A; 
+            border: none;
+            border-bottom: 1px solid #BAC1B8;
+            text-transform: uppercase;
+            width: 100%;
+            font-size: 20px;
+        }
+        
+        input[placeholder] {
+            color: #2B303A;
+        }
+    }
+
+    .social-icons-column {
+        text-align: right;
+        align-self: flex-start;
+        
+        h4 {
+            font-weight: 500;
+            color: #707078;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+    
+        .social-icons a {
+            display: inline-block;
+            width: 20.31px;
+            margin-right: 10.69px;
+        }
+    
+        .social-icons a:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    .horizontal-line {
+        border-top: 1px solid rgba(43, 48, 58, 0.2);
+        opacity: 20%;
+        margin: 9px 0 13px 0;
+    }
+
+    nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 8px;
+                color: #2B303A;
+                font-weight: 400;
+                font-size: 18px;
+            }
+
+            .work-with-us {
+                color: #DA2128;
+                text-decoration: underline;
+            }
+
+            a:hover {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        .top-nav {
+            text-align: center;
+        }
+
+        .search-column {
+            margin: 20px 0;
+
+            input[type="text"] {
+                width: 80%;
+            }
+        }
+
+        .social-icons-column {
+            text-align: center;
+        }
+    }
+}
