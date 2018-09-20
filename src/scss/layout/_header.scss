@@ -79,6 +79,28 @@ header {
             margin: 0;
             padding: 0;
             list-style: none;
+        }
+        
+        a {
+            display: block;            
+            text-decoration: none;
+            padding: 8px;
+            color: #2B303A;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        li:last-child div {
+            color: #DA2128;
+            border-bottom: 1px solid #DA2128;
+            display: inline-block;
+        }
+
+        a:hover {
+            font-weight: 700;
+        }
+        
+        .nav-desktop {
             display: flex;
             justify-content: space-between;
 
@@ -88,35 +110,33 @@ header {
             
             li:last-child {
                 margin-right: -8px;
-                padding: 8px;
-            }
-            
-            a {
-                display: block;
-                text-decoration: none;
-                padding: 8px;
-                color: #2B303A;
-                font-weight: 400;
-                font-size: 18px;
-            }
-            
-            li:last-child a {
-                color: #DA2128;
-                border-bottom: 1px solid #DA2128;
-                padding: 0;
-            }
-
-            a:hover {
-                font-weight: 700;
             }
         }
 
         .nav-mobile {
             display: none;
             outline: none;
-            text-align: center;
+            text-align: center; 
+            padding-top: 9px;    
+            padding-bottom: 9px;    
+            
+            .hamburger {
+                outline: none;
+            }
+
+            .nav-mobile-navigation {
+                display: none;
+                
+                a:hover {
+                    background-color: #BAC1B8;
+                }
+            }
         }
     }
+}
+
+.background-color {
+    background-color: #F4F4F4;
 }
 
 @media (max-width: 768px) {
@@ -141,6 +161,18 @@ header {
 
 @media (max-width: 979px) {
     header {
+        margin-bottom: 0;
+        
+        .horizontal-line {
+            margin-bottom: 0;
+        }
+
+        .header-navigation {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
         nav .nav-desktop {
             display: none;
         }

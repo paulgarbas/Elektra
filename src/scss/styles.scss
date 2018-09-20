@@ -56,25 +56,9 @@
 // @import "styles/footer";
 
 // Base Typography and Layout Helpers
-@import "../../node_modules/@getbase/typography-helpers/scss/index";
-@import "../../node_modules/@getbase/layout-helpers/scss/index";
-@import "../../node_modules/@getbase/layout-spacers/scss/index";
-
-// Import Base & Modules
-@import "../../node_modules/@getbase/animations/scss/index";
-@import "../../node_modules/@getbase/base/scss/index";
-@import "../../node_modules/@getbase/buttons/scss/index";
-@import "../../node_modules/@getbase/containers/scss/index";
-@import "../../node_modules/@getbase/forms/scss/index";
-@import "../../node_modules/@getbase/grid/scss/index";
-// @import "../../node_modules/@getbase/micro-grid/scss/index";
-@import "../../node_modules/@getbase/tables/scss/index";
-@import "../../node_modules/@getbase/typography/scss/index";
-
-// Base Typography and Layout Helpers
-@import "../../node_modules/@getbase/typography-helpers/scss/index";
-@import "../../node_modules/@getbase/layout-helpers/scss/index";
-@import "../../node_modules/@getbase/layout-spacers/scss/index";
+// @import "../../node_modules/@getbase/typography-helpers/scss/index";
+// @import "../../node_modules/@getbase/layout-helpers/scss/index";
+// @import "../../node_modules/@getbase/layout-spacers/scss/index";
 
 /* Import Base */
 @import "node_modules/@getbase/base/scss/index";
