@@ -1,7 +1,7 @@
 $(document).ready(function(){
     // Home slider
     $('.home-slider').slick({
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 5000,
         arrows: false,
         infinite: true,
@@ -39,6 +39,17 @@ $(document).ready(function(){
         //         }
         //     }
         // ]
+    });
+
+    // Our Projects Slider
+    $('.our-projects-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        // dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
 
     // Our Brands Slider

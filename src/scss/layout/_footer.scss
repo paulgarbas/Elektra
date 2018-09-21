@@ -51,6 +51,7 @@ footer {
             font-weight: 400;
             text-align: center;
             margin-bottom: 0;
+            line-height: 24px;
         }
     }
 
@@ -59,6 +60,7 @@ footer {
         font-size: 20px;
         margin-bottom: 32px;
         color: #2B303A;
+        line-height: 24px;
     }
 
     .footer-newsletter-subscribe {
@@ -122,6 +124,7 @@ footer {
         color: #95989D;
         font-weight: 700;
         font-size: 16px;
+        line-height: 19px;
 
         .mobile-number {
             text-align: center;
@@ -145,6 +148,14 @@ footer {
     }
 
     .footer-nav {
+        nav {
+            margin-bottom: 38px;
+        }
+
+        a {
+            line-height: 22px;
+        }
+
         li:first-child {
             margin-left: -8px;
         }
@@ -155,6 +166,7 @@ footer {
             font-weight: 400;
             opacity: 0.8;
             text-transform: none;
+            line-height: 19px;
         }
 
         li:first-child div:nth-child(2) {
@@ -166,41 +178,37 @@ footer {
         }
     }
 
+    .chat-logo__wrapper {
+        position: absolute;
+        top: 69px;
+        right: 0;
+    }
     .chat-logo {
-        display: flex;
-        justify-content: flex-end;
-        .chat-logo-column {
-            margin-top: -51px;
-            text-align: right;
-            
-            a {
-                display: inline-block;
-                width: 65px;  
-                height: 65px;
-            }
+        width: 65px;  
+        height: 65px;
+        
+        a {
+            display: inline-block;
         }
-
+        
         img {
-            width: 100%;  
-            height: 100%;
+            width: 100%;
         }
     }
 }
 
-.footer-newsletter-main::after {
+.footer-main::before {
     content: "";
-    background: url("../img/footer/halftone-dots.svg") no-repeat;
+    background: url("../img/footer/halftone-dots.svg") no-repeat left bottom;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    position: absolute;
-    z-index: -1;   
+    position: absolute; 
 }
 
 .footer-copyright__wrapper {
     background-color: #2B303A;
-    padding-top: 17px;
     
     .footer-copyright {
         background-color: #3b4048;
@@ -216,6 +224,14 @@ footer {
                 margin: 3px 0 1px 0;
             }
 
+            li:first-child {
+                margin-left: -8px
+            }
+
+            li:last-child {
+                margin-right: -8px;
+            }
+
             a {
                 display: block;
                 text-decoration: none;
@@ -224,6 +240,7 @@ footer {
                 opacity: 0.5;
                 font-weight: 400;
                 font-size: 14px;
+                line-height: 17px;
             }
 
             a:hover {
@@ -242,6 +259,7 @@ footer {
         color: rgba(43, 48, 58, 0.5);
         font-size: 14px;
         margin: 11px 0 8px 0;
+        line-height: 17px;
     }
 }
 
@@ -272,6 +290,10 @@ footer {
         }
 
         .footer-nav {
+            nav {
+                margin-bottom: 8px;
+            }
+            
             ul {
                 display: block;
                 text-align: center;
@@ -286,12 +308,12 @@ footer {
             }
         }
 
-        .chat-logo {
-            display: block;
-
-            .chat-logo-column {
-                margin-top: 8px;
-                text-align: center;
+        .chat-logo__wrapper {
+            position: static;
+            padding-bottom: 16px;
+            
+            .chat-logo {
+                margin: 0 auto;
             }
         }
     }
