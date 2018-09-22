@@ -2,9 +2,36 @@
     background: url("../img/residential/residential-main-banner-image.jpg") no-repeat center center;
     background-size: cover;
     height: 400px;
+    overflow: hidden;
+    position: relative;
+
+    .container-fluid,
+    .row-m {
+        height: 100%;
+    }
+
+    .residential-banner-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 35%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+        h1 {
+            color: #fff;
+            font-size: 45px;
+            font-weight: 700;
+            line-height: 75px;
+            margin: 0;
+        }
+    }
 }
 
 .residential-content {
+    
     p {
         text-align: center;
         line-height: 28px;
@@ -53,7 +80,23 @@
     z-index: -1;   
 }
 
+@media (max-width: 1199px) {
+    .residential-banner {
+        
+        .residential-banner-title {
+            width: 43%;
+        }
+    }
+}
+
 @media (max-width: 767px) {   
+    .residential-banner {
+        
+        .residential-banner-title {
+            width: 100%;
+        }
+    }
+
     .residential-online-shop {
         h2, p {
             text-align: center;

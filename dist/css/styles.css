@@ -888,6 +888,41 @@ footer {
   margin-top: 21px;
   margin-bottom: 80px; }
 
+.red-rounded-circle {
+  position: absolute;
+  background-color: #DA2128;
+  width: 35%;
+  height: 200%;
+  border-top-left-radius: 70%;
+  border-bottom-left-radius: 50%;
+  top: -40%;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+@media (max-width: 1919px) {
+  .red-rounded-circle {
+    width: 35%;
+    height: 180%;
+    border-top-left-radius: 90%;
+    border-bottom-left-radius: 40%;
+    top: -30%; } }
+
+@media (max-width: 1199px) {
+  .red-rounded-circle {
+    width: 43%; } }
+
+@media (max-width: 767px) {
+  .red-rounded-circle {
+    display: none; } }
+
 .home-slider {
   min-height: 659px;
   height: 659px; }
@@ -895,7 +930,8 @@ footer {
   .home-slider .slick-track {
     height: 100%; }
   .home-slider .home-slider-slide-first {
-    background: url("../img/home/main-banner-image.jpg") no-repeat center top; }
+    background: url("../img/home/main-banner-image.jpg") no-repeat center top;
+    background-size: cover; }
   .home-slider .home-slider-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -952,9 +988,12 @@ footer {
   z-index: -1; }
 
 .our-projects__wrapper {
-  position: relative;
   background: url("../img/home/our-projects-image.jpg") no-repeat center center;
+  background-size: cover;
   z-index: -2; }
+  .our-projects__wrapper .our-projects-slider {
+    padding-right: 52px;
+    background-color: rgba(43, 48, 58, 0.8); }
   .our-projects__wrapper h3 {
     color: #fff;
     text-transform: uppercase;
@@ -978,17 +1017,6 @@ footer {
     padding-bottom: 133px;
     margin-bottom: 0; }
 
-.our-projects__wrapper::after {
-  content: "";
-  background-color: rgba(43, 48, 58, 0.8);
-  width: 39%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
-
 .our-brands {
   margin-bottom: 57px; }
   .our-brands h3 {
@@ -1010,13 +1038,7 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .our-brands .our-brands-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .our-brands .our-brands-slider .our-brands-slide {
     width: auto !important; }
 
 @media (max-width: 979px) {
@@ -1055,7 +1077,33 @@ footer {
 .residential-banner {
   background: url("../img/residential/residential-main-banner-image.jpg") no-repeat center center;
   background-size: cover;
-  height: 400px; }
+  height: 400px;
+  overflow: hidden;
+  position: relative; }
+  .residential-banner .container-fluid,
+  .residential-banner .row-m {
+    height: 100%; }
+  .residential-banner .residential-banner-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .residential-banner .residential-banner-title h1 {
+      color: #fff;
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 75px;
+      margin: 0; }
 
 .residential-content p {
   text-align: center;
@@ -1097,7 +1145,13 @@ footer {
   position: absolute;
   z-index: -1; }
 
+@media (max-width: 1199px) {
+  .residential-banner .residential-banner-title {
+    width: 43%; } }
+
 @media (max-width: 767px) {
+  .residential-banner .residential-banner-title {
+    width: 100%; }
   .residential-online-shop h2, .residential-online-shop p {
     text-align: center; }
   .residential-online-shop::after {

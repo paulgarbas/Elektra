@@ -43,7 +43,7 @@ $(document).ready(function(){
 
     // Our Projects Slider
     $('.our-projects-slider').slick({
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 5000,
         // dots: true,
         arrows: false,
@@ -54,7 +54,8 @@ $(document).ready(function(){
 
     // Our Brands Slider
     $('.our-brands-slider').slick({
-        autoplay: true,
+        // autoplay: true,
+        // variableWidth: true,
         autoplaySpeed: 5000,
         arrows: false,
         infinite: true,

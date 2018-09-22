@@ -12,6 +12,7 @@
 
     .home-slider-slide-first {
         background: url("../img/home/main-banner-image.jpg") no-repeat center top;
+        background-size: cover;
     }
 
     .home-slider-row {
@@ -88,14 +89,15 @@
 }
 
 .our-projects__wrapper {
-    position: relative;
+    // position: relative;
     background: url("../img/home/our-projects-image.jpg") no-repeat center center;
+    background-size: cover;
     z-index: -2;
 
-    // .our-projects-slider {
-    //     height: 100%;
-    //     width: 100%;
-    // }
+    .our-projects-slider {
+        padding-right: 52px;
+        background-color: rgba(43, 48, 58, 0.8);            
+    }
 
     h3 {
         color: #fff;
@@ -127,17 +129,17 @@
     }
 }
 
-.our-projects__wrapper::after {
-    content: "";
-    background-color: rgba(43, 48, 58, 0.8);
-    width: 39%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-}
+// .our-projects__wrapper::after {
+//     content: "";
+//     background-color: rgba(43, 48, 58, 0.8);
+//     width: 39%;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     position: absolute;
+//     z-index: -1;   
+// }
 
 .our-brands {
     margin-bottom: 57px;
@@ -153,16 +155,81 @@
         line-height: 75px;
     }
 
+    .slick-list {
+        // margin-left: -30px;
+        // margin-right: -30px;
+        // padding-left: 50px;
+        // padding-right: 50px;
+    }
+
     .slick-track {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        // div + div {
+        //     margin-right: auto;
+        //     margin-left: auto;
+        // }
     }
 
-    .our-brands-slide {
-        display: flex;
-        justify-content: center;
-        width: auto !important;
+    .slick-slide {
+        // min-width: 100px;
+        
+
+        // img {
+        //     width: 10vw;
+        // }
+    }
+
+    .our-brands-slider {
+        // display: flex;
+        // justify-content: center;
+        // width: auto !important;
+        .our-brands-slide {
+            // margin-left: 60px;
+            // margin-right: 60px;
+            width: auto !important;
+        }
+        
+        img {
+            // width: 100%;
+            // margin: 0 auto;
+        }
+
+        // .first {
+        //     margin-right: 48px;
+        //     margin-left: 48px
+        //     // width: 139px !important; 
+        // }
+        
+        // .second {
+        //     // margin-right: 96px;   
+        //     margin-right: 48px;
+        //     margin-left: 48px         
+        //     // width: 71px  !important;
+        // }
+        
+        // .third {
+        //     // margin-right: 96px;  
+        //     margin-right: 48px;
+        //     margin-left: 48px          
+        //     // width: 218px !important; 
+        // }
+        
+        // .fourth {
+        //     // margin-right: 96px;  
+        //     margin-right: 48px;
+        //     margin-left: 48px          
+        //     // width: 176px !important; 
+        // }
+        
+        // .fifth {
+        //     // margin-right: 96px;  
+        //     margin-right: 48px;
+        //     margin-left: 48px                      
+        //     // width: 162px !important; 
+        // }
     }
 }
 

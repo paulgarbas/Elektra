@@ -1,0 +1,35 @@
+.red-rounded-circle {
+    position: absolute;    
+    background-color: #DA2128;
+    width: 35%;
+    height: 200%;
+    border-top-left-radius: 70%;
+    border-bottom-left-radius: 50%;
+    top: -40%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1919px) {
+    .red-rounded-circle {
+        width: 35%;
+        height: 180%;
+        border-top-left-radius: 90%;
+        border-bottom-left-radius: 40%;
+        top: -30%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .red-rounded-circle {
+        width: 43%;
+    }
+}
+
+@media (max-width: 767px) {
+    .red-rounded-circle {
+        display: none;
+    }
+}
