@@ -10,6 +10,21 @@
         height: 100%;
     }
 
+    .slick-prev {
+        left: 70px;
+        z-index: 1;
+    }
+    
+    .slick-next {
+        right: 70px;
+        z-index: 1;
+    }
+
+    .slick-prev:before, 
+    .slick-next:before {
+        font-size: 70px;
+    }
+
     .home-slider-slide-first {
         background: url("../img/home/main-banner-image.jpg") no-repeat center top;
         background-size: cover;
@@ -93,10 +108,55 @@
     background: url("../img/home/our-projects-image.jpg") no-repeat center center;
     background-size: cover;
     z-index: -2;
+    // height: 500px;
+
+    .overlay-container {
+        position: absolute;
+    }
+
+    .container-fluid, 
+    .row-m {
+        height: 100%;
+    }
 
     .our-projects-slider {
         padding-right: 52px;
         background-color: rgba(43, 48, 58, 0.8);            
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    .slick-dots {
+        bottom: 40px;
+        text-align: left;
+
+        li {
+            width: 13px;
+            height: 13px;
+            margin: 0;
+        }
+
+        li + li {
+            margin-left: 25px;
+        }
+        
+        button {
+            width: 13px;
+            height: 13px;
+        }
+    }
+
+    .slick-dots li button:before {
+        font-size: 13px;
+        color: #fff;
+        opacity: 1;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #DA2128;
+        opacity: 1;
     }
 
     h3 {
@@ -132,7 +192,7 @@
 // .our-projects__wrapper::after {
 //     content: "";
 //     background-color: rgba(43, 48, 58, 0.8);
-//     width: 39%;
+//     width: 50%;
 //     top: 0;
 //     left: 0;
 //     bottom: 0;
@@ -231,6 +291,28 @@
         //     // width: 162px !important; 
         // }
     }
+
+    .slick-prev {
+        left: -150px;
+        z-index: 1;
+    }
+    
+    .slick-next {
+        right: -150px;
+        z-index: 1;
+    }
+
+    .slick-prev:before, 
+    .slick-next:before {
+        font-size: 70px;
+        color: #000;
+    }
+}
+
+@media (max-width: 1200px) {
+    .our-projects__wrapper::after {  
+        width: 40%;
+    }
 }
 
 @media (max-width: 979px) {
@@ -281,6 +363,10 @@
 
         h3, h4, p {
             text-align: center;
+        }
+
+        .our-projects-slider {
+            padding-right: 0;         
         }
 
         .our-projects-slide {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -874,7 +875,8 @@ footer {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   text-align: left;
-  outline: none; }
+  outline: none;
+  line-height: 24px; }
 
 .subscribe {
   padding: 9px 36px 8px 33px;
@@ -887,6 +889,12 @@ footer {
 .read-more {
   margin-top: 21px;
   margin-bottom: 80px; }
+
+.commercial {
+  padding: 9px 35px 8px 36px;
+  margin-top: 7px;
+  margin-top: 24px;
+  margin-bottom: 81px; }
 
 .red-rounded-circle {
   position: absolute;
@@ -923,12 +931,98 @@ footer {
   .red-rounded-circle {
     display: none; } }
 
+.commercial-banner {
+  background: url("../img/commercial/commercial-main-banner-image.jpg") no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  background-size: cover;
+  height: 400px;
+  overflow: hidden;
+  position: relative; }
+  .commercial-banner .container-fluid,
+  .commercial-banner .row-m {
+    height: 100%; }
+  .commercial-banner .commercial-banner-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .commercial-banner .commercial-banner-title h1 {
+      color: #fff;
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 75px;
+      margin: 0; }
+
+.commercial-content p {
+  text-align: center;
+  line-height: 28px;
+  color: #2B303A;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 72px 0; }
+
+.commercial-projects {
+  position: relative;
+  background: url("../img/commercial/projects-banner-image.jpg") no-repeat center 40%;
+  background-size: cover;
+  z-index: -2; }
+  .commercial-projects p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 82px;
+    margin-bottom: 0; }
+
+.commercial-projects::after {
+  content: "";
+  background-color: rgba(43, 48, 58, 0.8);
+  width: 54%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+@media (max-width: 1199px) {
+  .commercial-banner .commercial-banner-title {
+    width: 43%; } }
+
+@media (max-width: 767px) {
+  .commercial-projects-left {
+    text-align: center; }
+  .commercial-banner .commercial-banner-title {
+    width: 100%; }
+  .commercial-projects::after {
+    width: 100%; } }
+
 .home-slider {
   min-height: 659px;
   height: 659px; }
   .home-slider .slick-list,
   .home-slider .slick-track {
     height: 100%; }
+  .home-slider .slick-prev {
+    left: 70px;
+    z-index: 1; }
+  .home-slider .slick-next {
+    right: 70px;
+    z-index: 1; }
+  .home-slider .slick-prev:before,
+  .home-slider .slick-next:before {
+    font-size: 70px; }
   .home-slider .home-slider-slide-first {
     background: url("../img/home/main-banner-image.jpg") no-repeat center top;
     background-size: cover; }
@@ -991,9 +1085,35 @@ footer {
   background: url("../img/home/our-projects-image.jpg") no-repeat center center;
   background-size: cover;
   z-index: -2; }
+  .our-projects__wrapper .overlay-container {
+    position: absolute; }
+  .our-projects__wrapper .container-fluid,
+  .our-projects__wrapper .row-m {
+    height: 100%; }
   .our-projects__wrapper .our-projects-slider {
     padding-right: 52px;
     background-color: rgba(43, 48, 58, 0.8); }
+  .our-projects__wrapper .slick-dotted.slick-slider {
+    margin-bottom: 0; }
+  .our-projects__wrapper .slick-dots {
+    bottom: 40px;
+    text-align: left; }
+    .our-projects__wrapper .slick-dots li {
+      width: 13px;
+      height: 13px;
+      margin: 0; }
+    .our-projects__wrapper .slick-dots li + li {
+      margin-left: 25px; }
+    .our-projects__wrapper .slick-dots button {
+      width: 13px;
+      height: 13px; }
+  .our-projects__wrapper .slick-dots li button:before {
+    font-size: 13px;
+    color: #fff;
+    opacity: 1; }
+  .our-projects__wrapper .slick-dots li.slick-active button:before {
+    color: #DA2128;
+    opacity: 1; }
   .our-projects__wrapper h3 {
     color: #fff;
     text-transform: uppercase;
@@ -1040,6 +1160,20 @@ footer {
             justify-content: space-between; }
   .our-brands .our-brands-slider .our-brands-slide {
     width: auto !important; }
+  .our-brands .slick-prev {
+    left: -150px;
+    z-index: 1; }
+  .our-brands .slick-next {
+    right: -150px;
+    z-index: 1; }
+  .our-brands .slick-prev:before,
+  .our-brands .slick-next:before {
+    font-size: 70px;
+    color: #000; }
+
+@media (max-width: 1200px) {
+  .our-projects__wrapper::after {
+    width: 40%; } }
 
 @media (max-width: 979px) {
   .our-projects__wrapper .our-projects-slide {
@@ -1068,6 +1202,8 @@ footer {
         text-align: center; }
   .our-projects__wrapper h3, .our-projects__wrapper h4, .our-projects__wrapper p {
     text-align: center; }
+  .our-projects__wrapper .our-projects-slider {
+    padding-right: 0; }
   .our-projects__wrapper .our-projects-slide {
     padding-left: 15px;
     padding-right: 15px; }
@@ -1150,12 +1286,119 @@ footer {
     width: 43%; } }
 
 @media (max-width: 767px) {
+  .residential-online-shop-left {
+    text-align: center; }
   .residential-banner .residential-banner-title {
     width: 100%; }
-  .residential-online-shop h2, .residential-online-shop p {
-    text-align: center; }
   .residential-online-shop::after {
     width: 100%; } }
+
+.services-banner {
+  background: url("../img/services/services-main-banner-image.jpg") no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+  background-size: cover;
+  height: 400px;
+  overflow: hidden;
+  position: relative; }
+  .services-banner .container-fluid,
+  .services-banner .row-m {
+    height: 100%; }
+  .services-banner .services-banner-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .services-banner .services-banner-title h1 {
+      color: #fff;
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 75px;
+      margin: 0;
+      text-transform: capitalize; }
+
+.services-content {
+  background-color: #F5F6F6; }
+  .services-content p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #2B303A;
+    margin-top: 72px;
+    margin-bottom: 80px;
+    text-align: center; }
+
+.services-list {
+  margin-top: 81px; }
+  .services-list .services-list-row {
+    margin-bottom: 119px; }
+  .services-list .services-list-img {
+    width: 59px;
+    height: 56px; }
+  .services-list h2 {
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 90px;
+    color: #DA2128;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    text-transform: capitalize; }
+  .services-list ul {
+    margin: 0 0 0 12px;
+    padding: 0;
+    max-width: 482px;
+    list-style: none; }
+    .services-list ul li {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 50px;
+      color: #2B303A;
+      text-align: left; }
+    .services-list ul li::before {
+      content: "•";
+      color: #DA2128;
+      display: inline-block;
+      width: 14px;
+      margin-left: -14px; }
+  .services-list .apply {
+    text-align: center;
+    margin: 73px 0 78px 0; }
+    .services-list .apply a {
+      text-decoration: none;
+      font-size: 17px;
+      color: #2B303A;
+      opacity: 0.5;
+      line-height: 54px;
+      font-weight: 400; }
+  .services-list .services-list-button {
+    text-align: center;
+    margin-bottom: 80px; }
+
+@media (max-width: 1199px) {
+  .services-banner .services-banner-title {
+    width: 43%; } }
+
+@media (max-width: 767px) {
+  .services-banner .services-banner-title {
+    width: 100%; }
+  .services-list .services-list-row {
+    margin-bottom: 0; }
+  .services-list .col-6-m {
+    margin-bottom: 100px; }
+  .services-list .services-list-img, .services-list ul {
+    margin: 0 auto; }
+  .services-list h2 {
+    text-align: center; } }
 
 /* ==========================================================================
 

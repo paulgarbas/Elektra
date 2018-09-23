@@ -32,8 +32,15 @@
 
 // 6. Page-specific styles
 @import
+'pages/about',
+'pages/blog',
+'pages/commercial',
+'pages/contact',
 'pages/home',
-'pages/residential';
+'pages/projects',
+'pages/residential',
+'pages/services',
+'pages/work-with-us';
 
 // 7. Themes
 @import
